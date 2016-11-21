@@ -9,7 +9,7 @@
 #ifdef __APPLE__
 #include <glut/glut.h>
 #else
-#include <GL/glut.h>
+#include <GL/freeglut.h>
 #endif
 
 
@@ -18,12 +18,12 @@ extern GLfloat current_pos[];
 #ifdef __cplusplus
 extern "C" {
 #endif
-  
-void readKeyboard(unsigned char key, int x, int y);
-void readSpecialKeys(int key, int x, int y);
-void mouseButtHandler(int button, int state, int x, int y);
-void mouseMoveHandler(int x, int y);
-void setUserView();
+
+	void readKeyboard(unsigned char key, int x, int y);
+	void readSpecialKeys(int key, int x, int y);
+	void mouseButtHandler(int button, int state, int x, int y);
+	void mouseMoveHandler(int x, int y);
+	void setUserView();
 
 #ifdef __cplusplus
 }

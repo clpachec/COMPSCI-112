@@ -2,7 +2,7 @@
 #define GEOMETRY_H
 
 #ifdef WIN32
-  #define M_PI 3.14159265359
+#define M_PI 3.14159265359
 #endif
 
 typedef float Vector3f[3];
